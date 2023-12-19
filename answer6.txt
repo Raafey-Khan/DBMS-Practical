@@ -1,0 +1,14 @@
+DECLARE
+   x NUMBER := 5;
+   y NUMBER := 10;
+   temp NUMBER;
+BEGIN
+   DBMS_OUTPUT.PUT_LINE('Before swapping - x: ' || x || ', y: ' || y);
+
+   temp := x;
+   x := y;
+   y := temp;
+
+   DBMS_OUTPUT.PUT_LINE('After swapping - x: ' || x || ', y: ' || y);
+END;
+/
